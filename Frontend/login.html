@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System - Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <div class="left-section">
+                <h1>GLOBAL STORE</h1>
+
+                <!-- Login Form -->
+                <form id="auth-form">
+                    <h2>LOGIN</h2>
+                    <div class="input-group">
+                        <input type="email" id="login-email" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="login-password" placeholder="Password" required>
+                        <span class="toggle-password" onclick="togglePassword('login-password')">👁</span>
+                    </div>
+                    <button type="submit" class="btn" id="submit-btn">Login Now</button>
+                    <p class="toggle-text">Don't have an account? <a href="#" id="toggle-form">Sign Up</a></p>
+                    <p class="forgot-password"><a href="forgot-password.html" id="forgot-password">Forgot Password?</a></p>
+                </form>
+
+                <!-- Sign-Up Form (Initially Hidden) -->
+                <form id="signup-form" style="display: none;">
+                    <h2>SIGN UP</h2>
+                    <div class="input-group">
+                        <input type="text" id="signup-name" placeholder="Full Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="signup-email" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="signup-password" placeholder="Password" required>
+                        <span class="toggle-password" onclick="togglePassword('signup-password')">👁</span>
+                    </div>
+                    <button type="submit" class="btn" id="register-btn">Sign Up</button>
+                    <p class="toggle-text">Already have an account? <a href="#" id="toggle-login">Login</a></p>
+                </form>
+            </div>
+            <div class="right-section">
+                <img src="logo/Logo.png" alt="Company Logo">
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+    <script src="signup.js"></script>
+
+</body>
+</html>

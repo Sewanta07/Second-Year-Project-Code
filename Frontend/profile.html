@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Inventory Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+    <script defer src="profile.js"></script>
+</head>
+<body>
+<div class="sidebar">
+    <div class="logo-container">
+        <a href="main.html">
+            <img src="logo/Logo.png" alt="Global Store Logo" class="logo">
+        </a>
+        <h2>Inventory Management System</h2>
+    </div>
+    <h2>Menu</h2>
+    <ul>
+        <li><a href="main.html">Dashboard</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="Aboutus.html">About Us</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+    </ul>
+</div>
+
+<div class="main-content">
+    <h1 class="fade-in">PROFILE</h1>
+
+    <div class="profile-container slide-in">
+        <!-- User Details Section (Left) -->
+        <div class="user-details-section">
+            <h2>IMS USER INFORMATION</h2>
+            <div class="user-details">
+                <p><strong>Name:</strong> <span id="user-name"></span></p>
+                <p><strong>Email:</strong> <span id="user-email"></span></p>
+                <p><strong>Role:</strong> <span id="user-role"></span></p>
+                <p><strong>Phone:</strong> 
+                    <input type="text" id="user-phone" placeholder="Add Phone" class="editable">
+                </p>
+                <p><strong>Address:</strong> 
+                    <input type="text" id="user-address" placeholder="Add Address" class="editable">
+                </p>
+                <button id="save-profile" class="btn">Save Changes</button>
+            </div>
+        </div>
+
+        <!-- Profile Photo Section (Right) -->
+        <div class="profile-photo-section">
+            <label for="profile-pic-upload">
+                <img id="user-photo" src="Images/default-user.png" alt="User Photo" class="profile-animate">
+            </label>
+            <input type="file" id="profile-pic-upload" accept="image/*" style="display: none;">
+        </div>
+    </div>
+</div>
+</body>
+</html>

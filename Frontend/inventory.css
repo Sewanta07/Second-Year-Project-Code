@@ -1,0 +1,222 @@
+/* Inventory Page Layout */
+.inventory-container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+/* Unified Inventory Section */
+.inventory-section {
+    width: 65%;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.inventory-section h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #2C3E50;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Search Box in the Middle */
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#search-bar {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.search-btn {
+    padding: 10px 18px;
+    background: #2C3E50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.search-btn:hover {
+    background: #1A252F;
+}
+
+/* Inventory Table */
+.inventory-list-container {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    margin-top: 10px;
+}
+
+.inventory-list-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.inventory-list-container th, .inventory-list-container td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.inventory-list-container th {
+    background: #2C3E50;
+    color: white;
+    padding: 14px;
+}
+
+.inventory-list-container tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+/* Add & Sold Items Modern Look */
+.item-management {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.small-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.small-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.small-form input:focus {
+    border-color: #2C3E50;
+    outline: none;
+    box-shadow: 0 0 6px rgba(44, 62, 80, 0.3);
+}
+
+/* Ensure all inputs, including date picker, have the same height */
+.small-form input[type="text"],
+.small-form input[type="number"],
+.small-form input[type="date"] {
+    height: 50px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #2C3E50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #1A252F;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.small-form {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+
+.small-form h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #2C3E50;
+    font-weight: bold;
+}
+
+.small-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+.small-form input:focus {
+    border-color: #2C3E50;
+    outline: none;
+    box-shadow: 0 0 6px rgba(44, 62, 80, 0.3);
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #2C3E50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #1A252F;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.sold-btn {
+    background: #E74C3C;
+}
+
+.sold-btn:hover {
+    background: #C0392B;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .inventory-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .inventory-section, .item-management {
+        width: 100%;
+    }
+
+    .item-management {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .small-form {
+        width: 48%;
+    }
+}
